@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding-block: 2.5em;
+  padding-inline: 1em;
+  font-family: 'Inter', sans-serif;
+  /* background: linear-gradient(to bottom left, #0066ff, #006666 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+
+  background: linear-gradient(90deg, #2DBBBF, #5865F2, #f5a2a1);
+  background-size: 300% 300%;
+  animation: gradient 4s alternate infinite;
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em; 
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 40em;
+  flex-grow: 1;
+  /* border: 2px solid red; */
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner__name {
+  display: flex;
+  justify-content: center;
+}
+
+.banner__image {
+  width: 128px;
+  height: 128px;
+  border-radius: 128px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-icon {
+  color: #fff;
+  width: 2em;
+  height: 2em;
+  text-decoration: none;
+  opacity: .75;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
+.thumbnail {
+  width: 48px;
+  height: 48px;
+  /* border-radius: 48px; */
+  object-fit: cover;
+}
+
+.link {
+  cursor: pointer;
+  background-color: #06129c;
+  opacity: 0.85;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 1em 2em;
+  border-radius: 3em;
+  box-shadow: 5px 10px 10px #888888;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+}
+
+.link:hover {
+  opacity: 0.5;
+  
+}
+
+.link a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+  backdrop-filter: blur(10px);
+}
+
+
+/* Custom Background from pocoloco.io */
+
+/* .background--custom {
+  background: linear-gradient(90deg, #2DBBBF, #5865F2, #f5a2a1);
+  background-size: 300% 300%;
+  animation: gradient 4s alternate infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+} */
+
+
+ 
